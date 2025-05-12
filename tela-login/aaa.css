@@ -63,3 +63,89 @@ body {
     font-size: 16px;
     transition: all 0.3s;
 }
+
+.input-group input:focus {
+    border-color: rgb(183, 0, 255);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(rgb(255, 0, 255), rgb(140, 0, 255), blue, alpha)
+}
+
+.input-group i {
+    position: absolute;
+    right: 15px;
+    top: 40px;
+    color: #999;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input {
+    margin-right: 8px;
+}
+
+.fogot-password a {
+    color: #ff00ea;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.fogot-password a:hover {
+    color: #b700ff;
+    text-decoration: underline;
+}
+
+.login-button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #ff00ea, #b700ff);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.login-button:hover {
+    background: linear-gradient(to right, rgb(183, 0, 255), rgb(255, 0, 255));
+    box-shadow: 0 5px 15px rgba(rgb(255, 0, 76), rgb(128, 0, 128), rgb(153, 0, 255), alpha);
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #ff0077;
+}
+
+.signup-link a {
+    color: #b700ff;
+    text-decoration: none;
+    font-weight: 600px;
+    transition: color 0.3;
+}
+
+.signup-link a:hover {
+    color: #ff00ea;
+    text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+}
